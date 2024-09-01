@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Sobre mim</a>
+            <a href="formacao.html">Formação</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <div class="container">      
+        <section id="contato" class="content">
+            <p>Caso queira entrar em contato:<br>
+            <p>E-mail: <a href="mailto:thalytafarias97@gmail.com">thalytafarias97@gmail.com</a>.</p>
+            
+            <h2>Ou envie diretamente uma mensagem:</h2>
+            <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain"><!--inicia o formulário para envio de email-->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><!--campo de texto para o nome, obrigatório-->
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><!--campo de entrada para email, obrigatório-->
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><!--área de texto para a mensagem, obrigatória-->
+
+                <input type="submit" value="Enviar"><!--botão para enviar o formulário-->
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        Copyright &copy; 2024 Thalyta Farias
+    </footer>
+</body>
+</html>
